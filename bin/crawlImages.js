@@ -3,9 +3,20 @@
 // requires
 var Xray = require('x-ray')
 var x = Xray()
+var solidbot = require('../')
 
 // globals
 var url = process.argv[2] || 'https://commons.wikimedia.org/wiki/Category:Art'
+
+solidbot.crawlImages(url, function(err, ret) {
+  if (err) {
+    console.error(err)
+  } else {
+    console.log(ret)    
+  }
+})
+
+/*
 var pattern = 'a'
 var next = '.next@href'
 
@@ -29,3 +40,4 @@ x(url, 'a', [{
 
 
 })
+*/
