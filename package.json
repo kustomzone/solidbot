@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -21,8 +21,10 @@
     "file-exists": "^1.0.0",
     "mysql": "^2.10.2",
     "path": "^0.12.7",
+    "podcatcher": "^0.2.1",
     "rdf-shell": "^0.1.36",
     "rdflib": "^0.7.0",
+    "redwrap": "0.0.4",
     "sequelize": "^3.23.2",
     "sqlite3": "^3.1.1",
     "x-ray": "^2.3.0"
