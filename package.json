@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/solid-live/solidbot.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Melvin Carvalho <melvincarvalho@gmail.com> (https://melvincarvalho.com/#me)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/solid-live/solidbot/issues"
   },
