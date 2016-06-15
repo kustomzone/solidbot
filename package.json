@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "dependencies": {
     "cron": "^1.1.0",
     "file-exists": "^1.0.0",
+    "kue": "^0.11.1",
     "mysql": "^2.10.2",
     "path": "^0.12.7",
     "podcatcher": "^0.2.1",
