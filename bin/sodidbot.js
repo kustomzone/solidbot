@@ -27,18 +27,8 @@ queue.process('db', db)
 queue.process('cmd', cmd)
 
 
-queue.activeCount( function( err, total ) { // others are activeCount, completeCount, failedCount, delayedCount
-  console.log(total)
-  if (total === 0) {
-    setTimeout(nextJob, interval*1000)
-  }
-})
+
 
 
 // server
 kue.app.listen(3002)
-
-
-// process
-function nextJob() {
-}
