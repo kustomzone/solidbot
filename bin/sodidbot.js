@@ -3,6 +3,10 @@
 var CronJob       = require('cron').CronJob
 var child_process = require('child_process')
 var kue           = require('kue')
+var solidbot      = require('../')
+
+var cmd           = solidbot.bots.cmd
+
 
 // init
 var interval = 4
@@ -17,19 +21,22 @@ new CronJob('*/'+ interval +' * * * * *', function() {
 }, null, true, 'America/Los_Angeles')
 
 
-queue.process('cmd', function(job, done){
+queue.process('cmd', cmd)
+
+
+queue.process('db', function(job, done){
   console.log(job.data)
-  console.log('running : ' + job.data.title);
+  console.log('running : ' + job.data.title)
   var cmd = job.data.cmd
+  console.log(cmd);
   child_process.exec(cmd, function(err, stdout, stderr){
     if (err) {
       console.error(err);
-      setTimeout(done, interval*1000)
-      //done()
+      done()
     } else {
       console.log(stdout);
-      setTimeout(done, interval*1000)
-      //done()
+      console.error(stderr);
+      done()
     }
   })
 })
