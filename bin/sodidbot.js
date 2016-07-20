@@ -5,6 +5,7 @@ var child_process = require('child_process')
 var kue           = require('kue')
 var solidbot      = require('../')
 
+var d             = solidbot.bots.db
 var cmd           = solidbot.bots.cmd
 
 
@@ -21,25 +22,9 @@ new CronJob('*/'+ interval +' * * * * *', function() {
 }, null, true, 'America/Los_Angeles')
 
 
+
+queue.process('db', db)
 queue.process('cmd', cmd)
-
-
-queue.process('db', function(job, done){
-  console.log(job.data)
-  console.log('running : ' + job.data.title)
-  var cmd = job.data.cmd
-  console.log(cmd);
-  child_process.exec(cmd, function(err, stdout, stderr){
-    if (err) {
-      console.error(err);
-      done()
-    } else {
-      console.log(stdout);
-      console.error(stderr);
-      done()
-    }
-  })
-})
 
 
 queue.activeCount( function( err, total ) { // others are activeCount, completeCount, failedCount, delayedCount
