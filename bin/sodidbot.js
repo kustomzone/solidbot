@@ -5,7 +5,7 @@ var child_process = require('child_process')
 var kue           = require('kue')
 var solidbot      = require('../')
 
-var d             = solidbot.bots.db
+var db            = solidbot.bots.db
 var cmd           = solidbot.bots.cmd
 
 
