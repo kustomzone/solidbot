@@ -49,6 +49,12 @@ Inbox processing is a job of type "inbox" and follows the [W3C LDN Consumer Spec
 
 An inbox processor can be started using the command
 
+    bin/inbox.js
+
+A convenience method is included to ping an inbox (pinbbox)
+
+    bin/pingbox.js <uri> [cert]
+
 * data.uri = the uri of the inbox
 * data.cert = optionally a certificate to use for authentication
 
