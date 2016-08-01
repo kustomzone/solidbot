@@ -7,6 +7,7 @@ var solidbot      = require('../')
 
 var db            = solidbot.bots.db
 var cmd           = solidbot.bots.cmd
+var inbox         = solidbot.bots.inbox
 
 
 // init
@@ -23,12 +24,10 @@ new CronJob('*/'+ interval +' * * * * *', function() {
 
 
 
-queue.process('db', db)
-queue.process('cmd', cmd)
-
+queue.process('inbox', inbox)
 
 
 
 
 // server
-kue.app.listen(3002)
+kue.app.listen(3005)
