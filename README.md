@@ -45,7 +45,7 @@ Currently this is implemented as a cmd type module above, but will evolve to pur
 
 # Inbox
 
-Inbox processing is a job of type "inbox" and follows the W3C LDN Consumer Specification.
+Inbox processing is a job of type "inbox" and follows the [W3C LDN Consumer Specification](https://linkedresearch.org/ldn/#consuming).
 
 An inbox processor can be started using the command
 
