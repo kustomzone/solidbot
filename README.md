@@ -8,10 +8,10 @@ This is a very early working prototype and *work in progress*
 
 * It is extensible in a similar way to express handlers
 * It is modular so that many different robots can run in one framework
-* It is highly robust working on the kue framework, to prioritize jobs
-* It is highly scalable using a redis database backend
-* It has a UI front end to monitor jobs
-* It has APIs, via command line, javascript and the web
+* It is highly robust working on the [kue](https://github.com/Automattic/kue) framework, to prioritize jobs
+* It is highly scalable using a [redis](http://redis.io/) database backend
+* It has a [UI front end](https://github.com/Automattic/kue#user-interface) to monitor jobs
+* It has APIs, via command line, javascript and [HTTP REST](https://github.com/Automattic/kue#json-api)
 
 # Installation
 
