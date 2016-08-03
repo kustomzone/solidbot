@@ -61,3 +61,21 @@ A convenience method is included to ping an inbox (pinbbox)
 The consumer will go the the inbox and display all the items in that inbox.
 
 Further work will be to process inbox items according to their content.
+
+# Extending solidbot
+
+Bot extensions are stored in the
+
+    lib/bots
+
+Directory.  
+
+A bot takes two parameter, a `job` which is a kue job, and a function `done` which is called when the job is completed.  It is possible to throttle jobs by delaying when done() is called.
+
+New bots are then added to the daemon with the simple line:
+
+    ```
+    queue.process('crawler', crawler.bots.crawler)
+    ```
+
+Where `crawler` here is the name of the job type.
