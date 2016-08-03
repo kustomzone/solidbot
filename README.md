@@ -1,3 +1,5 @@
+[![Join the chat at https://gitter.im/solid-live/solidbot](https://badges.gitter.im/solid-live/solidbot.svg)](https://gitter.im/solid-live/solidbot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # solidbot
 
 solidbot is a framework for running different kind of robots as a background daemon
