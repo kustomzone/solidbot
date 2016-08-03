@@ -74,8 +74,9 @@ A bot takes two parameter, a `job` which is a kue job, and a function `done` whi
 
 New bots are then added to the daemon with the simple line:
 
-    ```javascript
+
+```javascript
     queue.process('crawler', crawler.bots.crawler)
-    ```
+```
 
 Where `crawler` here is the name of the job type.
