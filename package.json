@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/solid-live/solidbot#readme",
   "dependencies": {
+    "commander": "^2.9.0",
     "cron": "^1.1.0",
     "file-exists": "^1.0.0",
     "kue": "^0.11.1",
