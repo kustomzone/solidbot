@@ -8,12 +8,14 @@ var queue = kue.createQueue()
 
 var program = commander
 .option('-O --output <file>', 'Output file')
+.option('-i --interval <s>', 'Interval', parseInt)
 .option('-m --media <>', 'Media')
 .parse(process.argv)
 
-var uri = program.args[0]
-var output = program.output
+var interval = program.interval
 var media = program.media
+var output = program.output
+var uri = program.args[0]
 
 if (!uri || !output) {
   console.error('must supply uri and output')
@@ -25,7 +27,8 @@ var job = queue.create('crawl', {
   'title': 'run crawl',
   'output': output,
   'uri': uri,
-  'media': media
+  'media': media,
+  'interval': interval
 }).save(function (err) {
   if (!err) {
     console.log(job.id)
