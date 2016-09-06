@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "redwrap": "0.0.4",
     "sequelize": "^3.23.2",
     "sqlite3": "^3.1.1",
-    "wc_db": "0.0.4",
+    "wc_db": "0.0.5",
     "x-ray": "^2.3.0"
   }
 }
