@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.30",
+  "version": "0.0.34",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
