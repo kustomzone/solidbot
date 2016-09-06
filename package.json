@@ -1,6 +1,6 @@
 {
   "name": "solidbot",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "description": "solid robot",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "commander": "^2.9.0",
     "cron": "^1.1.0",
     "debug": "^2.2.0",
+    "extractors": "0.0.27",
     "file-exists": "^1.0.0",
     "kue": "^0.11.1",
     "mysql": "^2.10.2",
