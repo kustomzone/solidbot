@@ -10,12 +10,14 @@ var program = commander
 .option('-O --output <file>', 'Output file')
 .option('-i --interval <s>', 'Interval', parseInt)
 .option('-m --media <>', 'Media')
+.option('-r --redis <>', 'Redis')
 .parse(process.argv)
 
 var interval = program.interval
 var media = program.media
 var output = program.output
 var uri = program.args[0]
+var redis = program.redis
 
 if (!uri || !output) {
   console.error('must supply uri and output')
@@ -28,6 +30,7 @@ var job = queue.create('crawl', {
   'output': output,
   'uri': uri,
   'media': media,
+  'redis': redis,
   'interval': interval
 }).save(function (err) {
   if (!err) {
