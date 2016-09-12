@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/solid-live/solidbot.png?label=ready&title=Ready)](https://waffle.io/solid-live/solidbot)
+[![](https://img.shields.io/badge/project-Solid_Live-7C4DFF.svg?style=flat-square)](https://github.com/solid-live/) [![Stories in Ready](https://badge.waffle.io/solid-live/solidbot.png?label=ready&title=Ready)](https://waffle.io/solid-live/solidbot)
 [![Join the chat at https://gitter.im/solid-live/solidbot](https://badges.gitter.im/solid-live/solidbot.svg)](https://gitter.im/solid-live/solidbot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # solidbot
