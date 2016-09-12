@@ -20,18 +20,29 @@ new CronJob('*/' + interval + ' * * * * *', function () {
   console.log('Running Cron every ' + interval + ' seconds')
 }, null, true, 'America/Los_Angeles')
 
+var program = commander
+  .option('-p --port [num]', 'Port Number')
+  .option('-c --crawl <sites>', 'Comma separted set of sites job with crawl/site')
+  .parse(process.argv)
+
+var crawlSites = program.crawl
+
+if (crawlSites) {
+  var sites = crawlSites.split(',')
+  for (var i = 0; i < sites.length; i++) {
+    var site = sites[i]
+    queue.process('crawl' + '/' + site, crawl)
+  }
+}
+
 queue.process('db', db)
 queue.process('chain', chain)
 queue.process('cmd', cmd)
 queue.process('crawl', crawl)
 queue.process('inbox', inbox)
 
-commander
-.option('-p --port [num]', 'Port Number')
-.parse(process.argv)
-
 var defaultPort = 3005
-var port = commander.port || defaultPort
+var port = program.port || defaultPort
 
 // server
 kue.app.listen(port)
