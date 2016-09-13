@@ -1,3 +1,5 @@
+![Solidbot Logo](https://github.com/solid-live/solidbot/blob/master/static/image/solidbot.png?raw=true)
+
 [![](https://img.shields.io/badge/project-Solid_Live-7C4DFF.svg?style=flat-square)](https://github.com/solid-live/)
 [![Join the chat at https://gitter.im/solid-live/solidbot](https://badges.gitter.im/solid-live/solidbot.svg)](https://gitter.im/solid-live/solidbot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NPM Version](https://img.shields.io/npm/v/solidbot.svg?style=flat-square)](https://npm.im/solidbot)
