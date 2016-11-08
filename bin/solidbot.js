@@ -58,7 +58,7 @@ if (queues) {
 } else {
   queue.process('db', db)
   queue.process('chain', chain)
-  queue.process('cmd', cmd)
+  queue.process('cmd', 1, cmd)
   queue.process('crawl', crawl)
   queue.process('inbox', inbox)
 }
