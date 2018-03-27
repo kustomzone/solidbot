@@ -58,7 +58,7 @@ An inbox processor can be started using the command
 
     bin/inbox.js
 
-A convenience method is included to ping an inbox (pinbbox)
+A convenience method is included to ping an inbox (pingbox)
 
     bin/pingbox.js <uri> [cert]
 
