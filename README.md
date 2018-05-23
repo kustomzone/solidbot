@@ -42,7 +42,7 @@ A few default bots are included in the package that will be described below
 
 Is of type "cmd" will run arbitrary commands in a queue.
 
-* data.cmd = the command to rune
+* data.cmd = the command to run
 
 # Crawler
 
